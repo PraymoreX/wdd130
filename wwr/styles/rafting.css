@@ -62,13 +62,12 @@ h1 {
 
 article{
     position: absolute;
-    top: 300px;
-    left: -15px;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff; 
+    color: white; 
     width: 100%;
-    padding: 10px;
+    top: 70px;
+    left: -15px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
 }
 
 .hero article img {
