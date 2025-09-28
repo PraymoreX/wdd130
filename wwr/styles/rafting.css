@@ -16,7 +16,9 @@
 
 header{
     background-color: var(--primary-color);
-    color: var(--accent2-color)
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 body{
@@ -83,5 +85,42 @@ h1 {
 
 .socialmedia{
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     gap: 30px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+figure img, .history img {
+    width: 125px;
+    height: auto;
+
+}
+
+.adventure-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.history{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    text-align: center;
 }
