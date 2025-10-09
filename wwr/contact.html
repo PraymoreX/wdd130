@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Get in touch with Rapid Rivers. Contact us for bookings, inquiries, or to learn more about our thrilling rafting experiences.">
+    <meta name="author" content="Praymore Tettey Omeni">
+    <title>Contact Us - Rapid Rivers</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="Website logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="contact-main">
+        <section class="contact-info">
+            <h1 class="contact-head">Rapid Rivers</h1>
+            <p>123 Main River Street<br>Kolob, California</p>
+            <p>+1 (999) 999-9999</p>
+            <p><a href="mailto:info@rapidrivers.com">info@rapidrivers.com</a></p>
+        </section>
+
+        <div class="body">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.195302401205!2d-122.41941568468158!3d37.774929779758654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b9b9f9e0b%3A0x6f5a84d2cb1f9e2!2sMain%20River%20St!5e0!3m2!1sen!2sus!4v1700000000000"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        
+            <section class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <div class="radio">
+                            <input type="radio" name="purpose" value="general" id="general" required
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="purpose" value="reservation" id="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="purpose" value="website" id="website">
+                            <label for="website">Website Suggestion</label> 
+                        </div>
+                    </fieldset>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Type here..." rows="5"></textarea>
+                    <div class="checkbox">
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-profiles">
+            <figure>
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>Sarah Johnson - Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>James Lee - Tour Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Emily Brown - Customer Relations</figcaption>
+            </figure>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Rapid Rivers | Created by Praymore Omeni</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
