@@ -27,7 +27,6 @@ body{
 }
 
 header, main, footer{
-    width: 840px;
     margin: -10px auto;
 }
 
@@ -219,13 +218,16 @@ main {
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
-
+section{
+  margin: 16px auto;
+}
 .contact-main{
     background-color: #f4f7f8;
 }
 
 .body{
     display: flex;
+    justify-content: center;
 }
 
 /* css for trips and home */
