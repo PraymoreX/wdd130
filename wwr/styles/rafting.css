@@ -28,7 +28,7 @@ body{
 
 header, main, footer{
     width: 840px;
-    margin: 5px auto;
+    margin: -10px auto;
 }
 
 h1,h2{
@@ -36,7 +36,7 @@ h1,h2{
     color: black;
 }
 
-nav, p, section, article{
+nav, p, article{
     padding: 8px;
     margin: 16px;
 }
@@ -136,7 +136,7 @@ h2{
 
 .contact-head{
     position:relative;
-    top: -50px;
+    top: -30px;
     width: 100%;
     padding: 10px;
 }
@@ -226,4 +226,231 @@ main {
 
 .body{
     display: flex;
+}
+
+/* css for trips and home */
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+  border-bottom: 2px solid #f4b400;
+}
+
+
+.home {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.home img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+main{
+   background: #cee8dd;
+   border-radius: 5px;
+}
+
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.home-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white; 
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.home-text h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #facc15; 
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.cta h3,
+.cta h2 {
+  color: #013220;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #09421a;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d89e00;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #e7f0ec;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.grid-item h4 {
+  margin-top: 0.8rem;
+  color: #013220;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: white;
+}
+
+.newsletter form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  background-color: #013220;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #025d39;
+}
+
+.trip-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #e7f0ec;
+}
+
+.trip-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-card h3 {
+  margin: 1rem;
+  color: #013220;
+}
+
+.trip-card p {
+  margin: 0 1rem 1.5rem;
+}
+
+
+.trips-table {
+  background: #e7f0ec;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #013220;
+  color: white;
+}
+
+td {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .home-text h2 {
+    font-size: 2rem;
+  }
 }
